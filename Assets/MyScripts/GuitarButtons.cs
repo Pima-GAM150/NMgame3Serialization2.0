@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class GuitarButtons : ButtonBehaviour {
 
-    
+
+    public int currentSelectedTrack;
 
 
-	
-	void Start () {
+    void Start () {
 		
 	}
 	
 	
-	void Update () {
+	void Update ()
+    {
+        currentSelectedTrack = numberOfClicks;
         buttonText.text = numberOfClicks.ToString();
         ButtonCountReset();
     }

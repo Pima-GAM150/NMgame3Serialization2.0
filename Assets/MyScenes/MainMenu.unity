@@ -504,7 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf49332389e018c4691d8ff29ef16b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenIndex: 1
+  mainMenuIndex: 0
+  playerMetalScreen: 1
 --- !u!1 &628378092
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +517,7 @@ GameObject:
   - component: {fileID: 628378095}
   - component: {fileID: 628378094}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,9 +573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Metal As F%$&
-
-    Main Menu'
+  m_Text: It isn't just Metal...
 --- !u!222 &628378095
 CanvasRenderer:
   m_ObjectHideFlags: 0

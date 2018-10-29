@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DrumButton : ButtonBehaviour {
 
-
+    public int currentSelectedTrack;
 
     // Use this for initialization
     void Start()
@@ -15,7 +15,8 @@ public class DrumButton : ButtonBehaviour {
     // Update is called once per frame
     void Update()
     {
-        buttonText.text = numberOfClicks.ToString();
+        currentSelectedTrack = numberOfClicks;
+        buttonText.text = currentSelectedTrack.ToString();
         ButtonCountReset();
     }
     

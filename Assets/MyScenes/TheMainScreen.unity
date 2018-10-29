@@ -166,6 +166,7 @@ MonoBehaviour:
   buttonText: {fileID: 2057863387}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &50304073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +665,7 @@ MonoBehaviour:
   buttonText: {fileID: 1044393848}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &192350441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1526,7 @@ MonoBehaviour:
   buttonText: {fileID: 433959350}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &446030573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,6 +2130,7 @@ MonoBehaviour:
   buttonText: {fileID: 676282788}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &504157297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2587,6 +2591,7 @@ MonoBehaviour:
   buttonText: {fileID: 1521944208}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &588396066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2751,6 +2756,7 @@ MonoBehaviour:
   buttonText: {fileID: 436473409}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &605354993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,6 +2921,7 @@ MonoBehaviour:
   buttonText: {fileID: 119802519}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &612281755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3154,6 +3161,7 @@ MonoBehaviour:
   buttonText: {fileID: 1755547938}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &683181632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3487,8 +3495,108 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
-  bassClips: []
-  guitarClips: []
+  bassClips:
+  - name: Bass1
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass2
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass3
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass4
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass5
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass6
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass7
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass8
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass9
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Bass10
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  guitarClips:
+  - name: Guitar1
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar2
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar3
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar4
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar5
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar6
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar7
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar8
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar9
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Guitar10
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
 --- !u!4 &726750405
 Transform:
   m_ObjectHideFlags: 0
@@ -3555,6 +3663,7 @@ MonoBehaviour:
   buttonText: {fileID: 2092517159}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &771368778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3992,6 +4101,7 @@ MonoBehaviour:
   buttonText: {fileID: 1400490974}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &977831590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4679,6 +4789,7 @@ MonoBehaviour:
   buttonText: {fileID: 773125265}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1086246662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4987,6 +5098,7 @@ MonoBehaviour:
   buttonText: {fileID: 2086754074}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1242646851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5151,6 +5263,7 @@ MonoBehaviour:
   buttonText: {fileID: 2020873282}
   numberOfClicks: 0
   maxNumberOfClicks: 6
+  currentSelectedTrack: 0
 --- !u!114 &1248098210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,6 +5551,7 @@ MonoBehaviour:
   buttonText: {fileID: 334187074}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1361899343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6238,6 +6352,7 @@ MonoBehaviour:
   buttonText: {fileID: 190667681}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!61 &1483332717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6391,6 +6506,7 @@ MonoBehaviour:
   buttonText: {fileID: 1829653023}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1533976194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6897,6 +7013,7 @@ MonoBehaviour:
   buttonText: {fileID: 1410357711}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1690891818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7644,6 +7761,7 @@ MonoBehaviour:
   buttonText: {fileID: 1150600463}
   numberOfClicks: 0
   maxNumberOfClicks: 10
+  currentSelectedTrack: 0
 --- !u!114 &1977116067
 MonoBehaviour:
   m_ObjectHideFlags: 0
