@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
 
+
+    public AudioMixer audioMix;
+
     public Sounds[] drumClips;
     public Sounds[] bassClips;
     public Sounds[] guitarClips;
@@ -37,7 +40,17 @@ public class AudioManager : MonoBehaviour {
 
 
     }
-	public void PlayDrums(string name)
+
+
+    public void SetVolume(float volume)
+    {
+        audioMix.SetFloat("Volume", volume);
+    }
+
+
+
+
+    public void PlayDrums(string name)
     {
         Sounds s = Array.Find(drumClips, sound => sound.name == name);
         if (s == null)

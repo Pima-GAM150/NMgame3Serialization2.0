@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class NeedleScript : MonoBehaviour {
 
+
+    
     //the needle speed variables the currentSpeed is hidden for the purpose to stop the need in its tracks with out using constraints. the public varibale can remain constant
     public float needleMoveSpeed;
     float currentPlayBackSpeed;
@@ -66,6 +69,18 @@ public class NeedleScript : MonoBehaviour {
     {// the stop function returns the needle to its starting position which is another empty gameobject.
         transform.position = startingPos.position;
     }//end stop
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
