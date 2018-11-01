@@ -168,15 +168,7 @@ public class NeedleScript : MonoBehaviour {
         ////end BASS
 
 
-
-
-
-
-
-
-
-
-
+        
         // for the drums... null exception when using <drumbutton>().currentSelectedTrack;
         Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
         //start drums
