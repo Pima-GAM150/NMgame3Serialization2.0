@@ -96,18 +96,18 @@ public class NeedleScript : MonoBehaviour {
         ///HOWEVER STILL HAVE ERRORS PROLLY WHEN 0 BUT IT WORKS OTHER WISE WHEN IT GETS COMPONENT<BUTTONBEHAVORIUS> SO I DONT KNOW
 
         ////start guitar soundscheck
-        //if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 1)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayGuitar("Guitar1");
-        //}
-        //else if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 2)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayGuitar("Guitar2");
-        //}
-        //else if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 3)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayGuitar("Guitar3");
-        //}
+        if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 1)
+        {
+            FindObjectOfType<AudioManager>().PlayGuitar("Guitar1");
+        }
+        else if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 2)
+        {
+            FindObjectOfType<AudioManager>().PlayGuitar("Guitar2");
+        }
+        else if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 3)
+        {
+            FindObjectOfType<AudioManager>().PlayGuitar("Guitar3");
+        }
         //else if (contact.GetComponent<GuitarButtons>().currentSelectedTrack == 4)
         //{
         //    FindObjectOfType<AudioManager>().PlayGuitar("Guitar4");
@@ -136,6 +136,7 @@ public class NeedleScript : MonoBehaviour {
         //{
         //    FindObjectOfType<AudioManager>().PlayGuitar("Guitar10");
         //}
+        else FindObjectOfType<AudioManager>().PlayNothing();
         ////end guitarsounds check
 
 
@@ -180,12 +181,10 @@ public class NeedleScript : MonoBehaviour {
         //{
         //    FindObjectOfType<AudioManager>().PlayBass("Bass10");
         //}
+        //else FindObjectOfType<AudioManager>().Pause();
         ////end BASS
 
-
         
-        // for the drums... null exception when using <drumbutton>().currentSelectedTrack;
-        Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
         //start drums
         if (contact.GetComponent<DrumButton>().currentSelectedTrack == 1)
         {
@@ -227,10 +226,9 @@ public class NeedleScript : MonoBehaviour {
         {
             FindObjectOfType<AudioManager>().PlayDrums("Drum10");
         }
-        else
-            FindObjectOfType<AudioManager>().Pause();
+        else FindObjectOfType<AudioManager>().PlayNothing();
         //end drums
-        
+        Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
     }//end of OnTriggerStay
 
 }//end of the script
