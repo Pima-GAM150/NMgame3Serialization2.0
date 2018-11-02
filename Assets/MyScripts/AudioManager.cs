@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour {
 
     public AudioMixer audioMix;
 
+    public Sounds[] extraSoundClips;
+
     public Sounds[] drumClips;
     public Sounds[] bassClips;
     public Sounds[] guitarClips;
@@ -38,6 +40,14 @@ public class AudioManager : MonoBehaviour {
             s.source.pitch = s.pitch;
         }
 
+        foreach (Sounds s in extraSoundClips)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+        }
+
 
     }
 
@@ -47,7 +57,16 @@ public class AudioManager : MonoBehaviour {
         audioMix.SetFloat("Volume", volume);
     }
 
-
+    public void PlayExtraSound(string name)
+    {
+        Sounds s = Array.Find(extraSoundClips, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Error Extra sound clip:" + name + "was not found!");
+            return;
+        }
+        s.source.Play();
+    }
 
 
     public void PlayDrums(string name)

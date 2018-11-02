@@ -13,5 +13,6 @@ public class ImageRotate : MonoBehaviour {
         transform.Translate(0, 0, - forwardSpeed* Time.deltaTime);
 	}
 	
+
 	
 }
