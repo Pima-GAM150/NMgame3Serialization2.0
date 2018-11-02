@@ -9,11 +9,16 @@ public abstract class ButtonBehaviour : MonoBehaviour {
     public int numberOfClicks;
     public int maxNumberOfClicks;
 
+    private void Start()
+    {
+        UpdateButtonText();
+    }
+
     public virtual void ButtonClick()
     {
         numberOfClicks++;
-        
 
+        UpdateButtonText();
     }
 
 
@@ -25,7 +30,10 @@ public abstract class ButtonBehaviour : MonoBehaviour {
         }
     }
 
-   
+    public virtual void UpdateButtonText()
+    {
+
+    }
 
 
 

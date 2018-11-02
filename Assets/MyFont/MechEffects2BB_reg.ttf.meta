@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 96ed9b2017ed8eb4cbb777ac35b24068
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MechEffects2 BB
+  fontNames:
+  - MechEffects2 BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4cf1d09b9961abf42a01aff4da2a2b83, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

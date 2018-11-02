@@ -13,7 +13,7 @@ public class BassButton : ButtonBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    public override void UpdateButtonText()
     {
         currentSelectedTrack = numberOfClicks;
         buttonText.text = numberOfClicks.ToString();
