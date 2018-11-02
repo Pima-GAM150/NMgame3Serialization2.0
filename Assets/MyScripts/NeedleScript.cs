@@ -184,51 +184,54 @@ public class NeedleScript : MonoBehaviour {
         //else FindObjectOfType<AudioManager>().Pause();
         ////end BASS
 
-        
+
         //start drums
-        if (contact.GetComponent<DrumButton>().currentSelectedTrack == 1)
+        if (contact.GetComponent<DrumButton>() != null)
         {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum1");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 2)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum2");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 3)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum3");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 4)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum4");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 5)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum5");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 6)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum6");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 7)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum7");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 8)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum8");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 9)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum9");
-        }
-        else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 10)
-        {
-            FindObjectOfType<AudioManager>().PlayDrums("Drum10");
-        }
-        else FindObjectOfType<AudioManager>().PlayNothing();
-        //end drums
-        Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
+            if (contact.GetComponent<DrumButton>().currentSelectedTrack == 1)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum1");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 2)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum2");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 3)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum3");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 4)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum4");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 5)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum5");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 6)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum6");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 7)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum7");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 8)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum8");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 9)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum9");
+            }
+            else if (contact.GetComponent<DrumButton>().currentSelectedTrack == 10)
+            {
+                FindObjectOfType<AudioManager>().PlayDrums("Drum10");
+            }
+           
+            //end drums
+            Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
+        } else FindObjectOfType<AudioManager>().PlayNothing();
     }//end of OnTriggerStay
 
 }//end of the script

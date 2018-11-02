@@ -1211,6 +1211,7 @@ GameObject:
   - component: {fileID: 995054850}
   - component: {fileID: 995054849}
   - component: {fileID: 995054851}
+  - component: {fileID: 995054852}
   m_Layer: 5
   m_Name: TVBackGround
   m_TagString: Untagged
@@ -1288,6 +1289,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &995054852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995054847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8b6c163791ba445bbf9e7559d2ee63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1457839765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,9 +1862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308b50a5aef74aa47b0f9c466dd03c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMix: {fileID: 0}
+  audioMix: {fileID: 24100000, guid: 3563cbc7d1e874f4c9c69592289f040c, type: 2}
   extraSoundClips:
-  - name: MainMenu
+  - name: MenuMusic
     clip: {fileID: 8300000, guid: f729739010e35344db64c8ad6f0312f7, type: 3}
     volume: 1
     pitch: 1
