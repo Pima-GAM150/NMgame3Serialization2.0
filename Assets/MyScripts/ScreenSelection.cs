@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class ScreenSelection : MonoBehaviour {
 
     public int mainMenuIndex = 0;
-    public int playerMetalScreen = 1;
-    
+    public int metalScreen = 1;
+    public int retroWaveScreen = 2;
 
 
 	void Start () {
@@ -19,12 +19,12 @@ public class ScreenSelection : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene(playerMetalScreen);
+                SceneManager.LoadScene(mainMenuIndex);
             }
 
             if (gameObject == null)
             {
-                SceneManager.LoadScene(playerMetalScreen);
+                SceneManager.LoadScene(mainMenuIndex);
             }
 
 
@@ -32,11 +32,18 @@ public class ScreenSelection : MonoBehaviour {
 
     }
 
-    public void GameStart()
+    public void MetalScreenStart()
     {
-        SceneManager.LoadScene(playerMetalScreen);
+        SceneManager.LoadScene(metalScreen);
 
     }
+
+
+    public void RetroScreenStart()
+    {
+        SceneManager.LoadScene(retroWaveScreen);
+    }
+
 
     public void BackToMenu()
     {

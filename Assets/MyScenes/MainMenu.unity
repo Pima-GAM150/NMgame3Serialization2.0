@@ -255,9 +255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Quit
-
-    Now'
+  m_Text: Eject
 --- !u!222 &203052663
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -780,7 +778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuIndex: 0
-  playerMetalScreen: 1
+  metalScreen: 1
+  retroWaveScreen: 2
 --- !u!1 &628378092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,7 +1328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92, y: 56}
+  m_AnchoredPosition: {x: -115.470055, y: 55.99999}
   m_SizeDelta: {x: 209.5, y: 54.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1457839767
@@ -1390,7 +1389,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 570122643}
-        m_MethodName: GameStart
+        m_MethodName: RetroScreenStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1781,8 +1780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 157.9, y: -59.3}
-  m_SizeDelta: {x: 77.8, y: 90.6}
+  m_AnchoredPosition: {x: -5.7e-14, y: -56}
+  m_SizeDelta: {x: 97.7, y: 42.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045030683
 MonoBehaviour:
@@ -1912,7 +1911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 137, y: 56}
+  m_AnchoredPosition: {x: 115.470055, y: 55.999996}
   m_SizeDelta: {x: 209.5, y: 54.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072189216
@@ -1955,7 +1954,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 570122643}
-        m_MethodName: GameStart
+        m_MethodName: MetalScreenStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/MyScenes/SampleScene.unity
+    path: 
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/MyScenes/MainMenu.unity
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/TheMainScreen.unity
     guid: 155dff9c3afa0444da973f66196a0415
+  - enabled: 1
+    path: Assets/MyScenes/RetroWave.unity
+    guid: ef3c8b896358c9e4db3f05bebcee8447
   m_configObjects: {}

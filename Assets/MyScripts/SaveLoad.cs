@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SaveLoad : MonoBehaviour {
 
-    public SongButtonCollection[] buttonCollections;
+    public ButtonBehaviour[] buttonBehaviours;
 
     public void LoadButtonClicked()
     {
@@ -14,22 +14,14 @@ public class SaveLoad : MonoBehaviour {
 
     public void SaveButtonClicked()
     {
-        SerializableSongButtonCollection songCollection = new SerializableSongButtonCollection { jsons = new string[buttonCollections.Length] };
-        for( int collectionIndex = 0; collectionIndex < buttonCollections.Length; collectionIndex++ )
+        SaveData saveData = new SaveData { trackNumbers = new int[buttonBehaviours.Length] };
+
+        for (int index = 0; index < buttonBehaviours.Length; index++)
         {
-            ButtonBehaviour[] buttonBehaviours = buttonCollections[collectionIndex].buttonBehaviours;
-            SaveData saveData = new SaveData { trackNumbers = new int[buttonBehaviours.Length] };
-
-            for (int index = 0; index < buttonBehaviours.Length; index++)
-            {
-                saveData.trackNumbers[index] = buttonBehaviours[index].numberOfClicks;
-            }
-
-            songCollection.jsons[collectionIndex] = JsonUtility.ToJson(saveData);
+            saveData.trackNumbers[index] = buttonBehaviours[index].numberOfClicks;
         }
 
-
-        string json = JsonUtility.ToJson(songCollection);
+        string json = JsonUtility.ToJson(saveData);
 
         print("Saving data \n" + json);
         PlayerPrefs.SetString("saveData", json);
@@ -44,29 +36,13 @@ public class SaveLoad : MonoBehaviour {
 
         SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
-        for (int collectionIndex = 0; collectionIndex < buttonCollections.Length; collectionIndex++)
+        for (int index = 0; index < buttonBehaviours.Length; index++)
         {
-            ButtonBehaviour[] buttonBehaviours = buttonCollections[collectionIndex].buttonBehaviours;
-
-            for (int index = 0; index < buttonBehaviours.Length; index++)
-            {
-                buttonBehaviours[index].numberOfClicks = saveData.trackNumbers[index];
-                buttonBehaviours[index].UpdateButtonText();
-                print("Just set button " + buttonBehaviours[index].transform.parent.name + " text to " + saveData.trackNumbers[index].ToString());
-            }
+            buttonBehaviours[index].numberOfClicks = saveData.trackNumbers[index];
+            buttonBehaviours[index].UpdateButtonText();
+            print("Just set button " + buttonBehaviours[index].transform.parent.name + " text to " + saveData.trackNumbers[index].ToString());
         }
     }
-}
-
-[System.Serializable]
-public class SongButtonCollection
-{
-    public ButtonBehaviour[] buttonBehaviours;
-}
-
-public class SerializableSongButtonCollection
-{
-    public string[] jsons;
 }
 
 public class SaveData
