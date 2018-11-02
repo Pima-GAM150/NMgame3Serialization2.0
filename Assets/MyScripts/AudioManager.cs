@@ -83,6 +83,12 @@ public class AudioManager : MonoBehaviour {
         s.source.Play();
     }
 
+    public void PlayNothing()
+    {
+
+    }
+
+
     public void Pause()
     {
         Sounds sG = Array.Find(guitarClips, sound => sound.name == name);

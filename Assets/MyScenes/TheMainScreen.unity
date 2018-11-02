@@ -3709,19 +3709,19 @@ MonoBehaviour:
     source: {fileID: 0}
   guitarClips:
   - name: Guitar1
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 41248be863d3b684189d040a72df87a6, type: 3}
+    volume: 0.1
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar2
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 40c991b9839a5054db34831dd54c0546, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar3
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 9b388e7ea6d2d974fa89a273083decd6, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar4
     clip: {fileID: 0}
