@@ -230,7 +230,7 @@ public class NeedleScript : MonoBehaviour {
             }
            
             //end drums
-            Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
+            Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().currentSelectedTrack);
         } else FindObjectOfType<AudioManager>().PlayNothing();
     }//end of OnTriggerStay
 

@@ -51,4 +51,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3d41f0bf9bd56468f16f1cafe2d34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonCollections: []
+  songsDropdown: {fileID: 0}
+  buttonBehaviours:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
