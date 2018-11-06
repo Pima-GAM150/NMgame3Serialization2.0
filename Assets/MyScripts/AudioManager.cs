@@ -118,4 +118,14 @@ public class AudioManager : MonoBehaviour {
         sD.source.Pause();
     }
 
+    public void StopMusic()
+    {
+        Sounds sG = Array.Find(guitarClips, sound => sound.name == name);
+        Sounds sB = Array.Find(bassClips, sound => sound.name == name);
+        Sounds sD = Array.Find(drumClips, sound => sound.name == name);
+        sG.source.Stop();
+        sB.source.Stop();
+        sD.source.Stop();
+    }
+
 }

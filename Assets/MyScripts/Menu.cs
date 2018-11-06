@@ -3,14 +3,30 @@ using UnityEngine;
 
 
 public class Menu : MonoBehaviour {
+    
 
-	// Use this for initialization
+    public int loadCount = 0;
+
+
 	void Start () {
-        FindObjectOfType<AudioManager>().PlayExtraSound("MenuMusic");
+        loadCount++;
+        PlayMusic();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+       
 	}
+
+
+    void PlayMusic()
+    {
+        if (loadCount > 1)
+        {
+            FindObjectOfType<AudioManager>().PlayExtraSound("2ndMenuMusic");
+        }
+        else FindObjectOfType<AudioManager>().PlayExtraSound("MenuMusic");
+    }
+
+
 }

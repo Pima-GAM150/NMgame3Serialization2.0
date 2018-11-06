@@ -1300,6 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8b6c163791ba445bbf9e7559d2ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadCount: 0
 --- !u!1 &1457839765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1867,11 @@ MonoBehaviour:
   extraSoundClips:
   - name: MenuMusic
     clip: {fileID: 8300000, guid: f729739010e35344db64c8ad6f0312f7, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: 2ndMenuMusic
+    clip: {fileID: 8300000, guid: 2df22713213dcde469ea550b5c977985, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
