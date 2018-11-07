@@ -145,49 +145,52 @@ public class NeedleScript : MonoBehaviour {
 
 
         ////START BASS sound check
-        //if (contact.GetComponent<BassButton>().currentSelectedTrack == 1)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass1");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 2)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass2");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 3)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass3");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 4)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass4");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 5)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass5");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 6)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass6");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 7)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass7");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 8)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass8");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 9)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass9");
-        //}
-        //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 10)
-        //{
-        //    FindObjectOfType<AudioManager>().PlayBass("Bass10");
-        //}
-        //else FindObjectOfType<AudioManager>().Pause();
-        ////end BASS
+        if (contact.GetComponent<BassButton>() != null)
+        {
+            if (contact.GetComponent<BassButton>().currentSelectedTrack == 1)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass1");
+            }
+            else if (contact.GetComponent<BassButton>().currentSelectedTrack == 2)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass2");
+            }
+            else if (contact.GetComponent<BassButton>().currentSelectedTrack == 3)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass3");
+            }
+            else if (contact.GetComponent<BassButton>().currentSelectedTrack == 4)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass4");
+            }
+            else if (contact.GetComponent<BassButton>().currentSelectedTrack == 5)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass5");
+            }
+            else if (contact.GetComponent<BassButton>().currentSelectedTrack == 6)
+            {
+                FindObjectOfType<AudioManager>().PlayBass("Bass6");
+            }
+            //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 7)
+            //{
+            //    FindObjectOfType<AudioManager>().PlayBass("Bass7");
+            //}
+            //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 8)
+            //{
+            //    FindObjectOfType<AudioManager>().PlayBass("Bass8");
+            //}
+            //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 9)
+            //{
+            //    FindObjectOfType<AudioManager>().PlayBass("Bass9");
+            //}
+            //else if (contact.GetComponent<BassButton>().currentSelectedTrack == 10)
+            //{
+            //    FindObjectOfType<AudioManager>().PlayBass("Bass10");
+            //}
+            //else FindObjectOfType<AudioManager>().Pause();
 
+        }////end BASS
+        else FindObjectOfType<AudioManager>().PlayNothing();
 
         //start drums
         if (contact.GetComponent<DrumButton>() != null)

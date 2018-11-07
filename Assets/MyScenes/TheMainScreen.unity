@@ -3575,34 +3575,34 @@ MonoBehaviour:
     source: {fileID: 0}
   bassClips:
   - name: Bass1
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 4174f30249d57504dad171fc4f885822, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass2
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 6607577f931ebd548aab9facbdfe8fc8, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass3
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 20f3385ba3f0d2942b98a08dbe3784b3, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass4
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 6365b0c4ee044244782e10ecc9ffec35, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass5
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: bb9144177e4af2c4c90386b8ec42adc7, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass6
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 089101b3e5c399247ad5ca51129bcde9, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Bass7
     clip: {fileID: 0}
@@ -3626,8 +3626,8 @@ MonoBehaviour:
     source: {fileID: 0}
   guitarClips:
   - name: Guitar1
-    clip: {fileID: 8300000, guid: 41248be863d3b684189d040a72df87a6, type: 3}
-    volume: 0.2
+    clip: {fileID: 8300000, guid: 779859ec2abb5e345909f00ad42859bb, type: 3}
+    volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: Guitar2
