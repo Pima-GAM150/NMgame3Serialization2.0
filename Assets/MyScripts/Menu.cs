@@ -5,11 +5,10 @@ using UnityEngine;
 public class Menu : MonoBehaviour {
     
 
-    public int loadCount = 0;
 
 
 	void Start () {
-        loadCount++;
+        
         PlayMusic();
 	}
 	
@@ -21,7 +20,7 @@ public class Menu : MonoBehaviour {
 
     void PlayMusic()
     {
-        if (loadCount > 1)
+        if (FindObjectOfType<SceneCounter>().sceneCount > 1)
         {
             FindObjectOfType<AudioManager>().PlayExtraSound("2ndMenuMusic");
         }

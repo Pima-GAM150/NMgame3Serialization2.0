@@ -8,6 +8,7 @@ public class ScreenSelection : MonoBehaviour {
     public int mainMenuIndex = 0;
     public int metalScreen = 1;
     public int retroWaveScreen = 2;
+    public int currentScreen;
 
 
 	void Start () {
@@ -35,7 +36,7 @@ public class ScreenSelection : MonoBehaviour {
     public void MetalScreenStart()
     {
         SceneManager.LoadScene(metalScreen);
-
+        
     }
 
 
