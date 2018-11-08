@@ -15,7 +15,7 @@ public class SceneCounter : MonoBehaviour {
             singleton = this;
             DontDestroyOnLoad(singleton);
         }
-        else Destroy(singleton);
+        else Destroy(gameObject);
 
            
 	}

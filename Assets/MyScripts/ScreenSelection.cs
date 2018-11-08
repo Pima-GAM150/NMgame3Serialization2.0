@@ -51,6 +51,12 @@ public class ScreenSelection : MonoBehaviour {
         SceneManager.LoadScene(mainMenuIndex);
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("Ejected");
+        Application.Quit();
+    }
+
 }
 
 
