@@ -163,10 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 2057863387}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 2057863387}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &50304073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,10 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1044393848}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1044393848}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &192350441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1542,10 +1538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 433959350}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 433959350}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &446030573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,10 +2178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 676282788}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 676282788}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &504157297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2748,10 +2740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1521944208}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1521944208}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &588396066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2913,10 +2903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 436473409}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 436473409}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &605354993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,10 +3066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 119802519}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 119802519}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &612281755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3318,10 +3304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1755547938}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1755547938}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &683181632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3605,6 +3589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMix: {fileID: 24100000, guid: 3563cbc7d1e874f4c9c69592289f040c, type: 2}
+  extraSoundClips: []
   drumClips:
   - name: Drum1
     clip: {fileID: 8300000, guid: ac41b773457528d4283540d2c6a630cf, type: 3}
@@ -3855,10 +3840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 2092517159}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 2092517159}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &771368778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4056,7 +4039,6 @@ GameObject:
   - component: {fileID: 879055412}
   - component: {fileID: 879055411}
   - component: {fileID: 879055410}
-  - component: {fileID: 879055413}
   - component: {fileID: 879055414}
   m_Layer: 5
   m_Name: Save Button
@@ -4170,18 +4152,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879055408}
   m_CullTransparentMesh: 0
---- !u!114 &879055413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 879055408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d3d41f0bf9bd56468f16f1cafe2d34e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonBehaviours: []
 --- !u!95 &879055414
 Animator:
   serializedVersion: 3
@@ -4312,10 +4282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1400490974}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1400490974}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &977831590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5000,10 +4968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 773125265}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 773125265}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1086246662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5406,10 +5372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 2086754074}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 2086754074}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1242646851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5571,10 +5535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312adaf3a391f0241b1e39d43f444a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 2020873282}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 2020873282}
   maxNumberOfClicks: 6
-  currentSelectedTrack: 0
 --- !u!114 &1248098210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5878,10 +5840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 334187074}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 334187074}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1361899343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,7 +6318,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1943987433}
+        m_MethodName: UpdateAllButtonsForSong
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1451418241
@@ -6756,10 +6727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 190667681}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 190667681}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!61 &1483332717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6910,10 +6879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1829653023}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1829653023}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1533976194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7555,10 +7522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9dc45b8d24694e9183af40069c02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1410357711}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1410357711}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1690891818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8309,10 +8274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f57a8ac7b2fdf142889237d65039ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1150600463}
-  numberOfClicks: 0
+  buttonLabel: {fileID: 1150600463}
   maxNumberOfClicks: 10
-  currentSelectedTrack: 0
 --- !u!114 &1977116067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8628,7 +8591,6 @@ GameObject:
   - component: {fileID: 2054911725}
   - component: {fileID: 2054911724}
   - component: {fileID: 2054911723}
-  - component: {fileID: 2054911722}
   - component: {fileID: 2054911726}
   m_Layer: 5
   m_Name: LoadButton
@@ -8656,18 +8618,6 @@ RectTransform:
   m_AnchoredPosition: {x: 268.75665, y: -9.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2054911722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2054911720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d3d41f0bf9bd56468f16f1cafe2d34e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonBehaviours: []
 --- !u!114 &2054911723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9231,6 +9181,11 @@ Prefab:
       propertyPath: buttonBehaviours.Array.data[17]
       value: 
       objectReference: {fileID: 1086246661}
+    - target: {fileID: 114105773917330394, guid: 8252e45d266e23043841f3690278c843,
+        type: 2}
+      propertyPath: songsDropdown
+      value: 
+      objectReference: {fileID: 1451418240}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8252e45d266e23043841f3690278c843, type: 2}
   m_IsPrefabAsset: 0

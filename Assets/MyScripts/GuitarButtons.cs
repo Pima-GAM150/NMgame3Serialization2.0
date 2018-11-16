@@ -4,4 +4,8 @@ using UnityEngine;
 
 public class GuitarButtons : ButtonBehaviour {
 
+    private void Update()
+    {
+        UpdateButtonText();
+    }
 }
