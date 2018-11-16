@@ -110,22 +110,22 @@ public class AudioManager : MonoBehaviour {
 
     public void Pause()
     {
-        Sounds sG = Array.Find(guitarClips, sound => sound.name == name);
-        Sounds sB = Array.Find(bassClips, sound => sound.name == name);
-        Sounds sD = Array.Find(drumClips, sound => sound.name == name);
-        sG.source.Pause();
-        sB.source.Pause();
-        sD.source.Pause();
+        //Sounds sG = Array.Find(guitarClips, sound => sound.name == name);
+        //Sounds sB = Array.Find(bassClips, sound => sound.name == name);
+        //Sounds sD = Array.Find(drumClips, sound => sound.name == name);
+        //sG.source.Pause();
+        //sB.source.Pause();
+        //sD.source.Pause();
     }
 
     public void StopMusic()
     {
-        Sounds sG = Array.Find(guitarClips, sound => sound.name == name);
-        Sounds sB = Array.Find(bassClips, sound => sound.name == name);
-        Sounds sD = Array.Find(drumClips, sound => sound.name == name);
-        sG.source.Stop();
-        sB.source.Stop();
-        sD.source.Stop();
+        //Sounds sG = Array.Find(guitarClips, sound => sound.name == name);
+        //Sounds sB = Array.Find(bassClips, sound => sound.name == name);
+        //Sounds sD = Array.Find(drumClips, sound => sound.name == name);
+        //sG.source.Stop();
+        //sB.source.Stop();
+        //sD.source.Stop();
     }
 
 }
