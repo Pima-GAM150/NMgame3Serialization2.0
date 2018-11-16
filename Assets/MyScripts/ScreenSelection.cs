@@ -8,6 +8,9 @@ public class ScreenSelection : MonoBehaviour {
     public int mainMenuIndex = 0;
     public int metalScreen = 1;
     public int retroWaveScreen = 2;
+    public int shooterGame = 3;
+    public int trailerScene = 4;
+
     public int currentScreen;
 
 
@@ -50,6 +53,17 @@ public class ScreenSelection : MonoBehaviour {
     {
         SceneManager.LoadScene(mainMenuIndex);
     }
+
+    public void ShooterGameStart()
+    {
+        SceneManager.LoadScene(shooterGame);
+    }
+
+    public void TrailerStart()
+    {
+        SceneManager.LoadScene(trailerScene);
+    }
+
 
 }
 

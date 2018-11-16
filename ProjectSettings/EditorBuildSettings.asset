@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/RetroWave.unity
     guid: ef3c8b896358c9e4db3f05bebcee8447
+  - enabled: 1
+    path: Assets/MyScenes/ShooterScene.unity
+    guid: 1856dfb3a76646c4c81386c7a3627155
+  - enabled: 1
+    path: Assets/MyScenes/TrailerScene.unity
+    guid: 6cd0bca72e2d83f48bab19b14f6cff43
   m_configObjects: {}
