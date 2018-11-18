@@ -65,6 +65,12 @@ public class ScreenSelection : MonoBehaviour {
     }
 
 
+    public void QuitGame()
+    {
+        Debug.Log("Ejected");
+        Application.Quit();
+    }
+
 }
 
 

@@ -995,7 +995,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b1de909bf9612c145921f966f27ced2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78574bcbb6683424182ddd99f6cee818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needleMoveSpeed: 23
+  needleMoveSpeed: 24
   startingPos: {fileID: 1773851404}
   needlesState: 0
 --- !u!50 &270932124
@@ -2428,7 +2428,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 650, y: 450, z: -50}
+  m_LocalPosition: {x: 650, y: 450, z: -70}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2488,7 +2488,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4558d8be0bdd5fd4697a6b9d691ea8a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3559,103 +3559,103 @@ MonoBehaviour:
     source: {fileID: 0}
   bassClips:
   - name: Bass1
-    clip: {fileID: 8300000, guid: 4174f30249d57504dad171fc4f885822, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: ec6f31f7046b6aa42892c83772b2833c, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass2
-    clip: {fileID: 8300000, guid: 6607577f931ebd548aab9facbdfe8fc8, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: e3975f78febae38458d315a62d5b1c0a, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass3
-    clip: {fileID: 8300000, guid: 20f3385ba3f0d2942b98a08dbe3784b3, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 0f4fcd0ecad91d648bd251a2e3cd3033, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass4
-    clip: {fileID: 8300000, guid: 6365b0c4ee044244782e10ecc9ffec35, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: f475c81785491fc4e89c0e19eca94965, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass5
-    clip: {fileID: 8300000, guid: bb9144177e4af2c4c90386b8ec42adc7, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: a581cf2602873f3439196ec1a59dfbde, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass6
-    clip: {fileID: 8300000, guid: 089101b3e5c399247ad5ca51129bcde9, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: c61023567bfac774aa98cfeb2bb91650, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Bass7
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7907571f03a85c04b902ef050fa46f3f, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Bass8
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9c93027603ad4ab44a8c7996c00c9698, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Bass9
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: a18b099d5e7d5ca48a77fc62ec6a1551, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Bass10
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1420bffea6ae9f44095a55019ee091e9, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   guitarClips:
   - name: Guitar1
-    clip: {fileID: 8300000, guid: 779859ec2abb5e345909f00ad42859bb, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: c50e350d4051a7845ab8c52f47073c41, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: Guitar2
-    clip: {fileID: 8300000, guid: 40c991b9839a5054db34831dd54c0546, type: 3}
+    clip: {fileID: 8300000, guid: af9a61fd30c9a8f4c9a420166194d2ad, type: 3}
     volume: 0.2
     pitch: 1
     source: {fileID: 0}
   - name: Guitar3
-    clip: {fileID: 8300000, guid: 9b388e7ea6d2d974fa89a273083decd6, type: 3}
+    clip: {fileID: 8300000, guid: eb65465c6c54b4a4c87cbc5b42461c72, type: 3}
     volume: 0.1
     pitch: 1
     source: {fileID: 0}
   - name: Guitar4
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 77c4a25efa0ebbb45ac598d981cfb43e, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar5
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 439df44ecfde5c946bdb020dbd9cce98, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar6
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: d6f4c48e18a254b479ae5c46e3969a0b, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar7
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 00575efce23be82438bcac8eb986bcc0, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar8
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9e0460bdee0e4dd4495689402854816d, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar9
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: c114a224a119ed84da09bd187dc8fa74, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Guitar10
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 695fa94a74add7a4abe95814b236b5ae, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
@@ -4440,7 +4440,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 40278c07f09c49d4f9f567ccaf5fc347, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6068,6 +6068,7 @@ MonoBehaviour:
   mainMenuIndex: 0
   metalScreen: 1
   retroWaveScreen: 2
+  currentScreen: 0
 --- !u!1 &1410357709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,6 +7562,7 @@ GameObject:
   - component: {fileID: 1718021373}
   - component: {fileID: 1718021375}
   - component: {fileID: 1718021374}
+  - component: {fileID: 1718021376}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -7620,6 +7622,47 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1718021372}
   m_CullTransparentMesh: 0
+--- !u!114 &1718021376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718021372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1718021374}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1755547936
 GameObject:
   m_ObjectHideFlags: 0
@@ -8342,7 +8385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50.078003, y: -46.18802}
+  m_AnchoredPosition: {x: -50.078003, y: -46.18805}
   m_SizeDelta: {x: -1168.2, y: -587.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994520498
