@@ -8,6 +8,7 @@ public class BulletShot : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         StartCoroutine(DestroyAfterSeconds(secondsTilDeath));
 
     }

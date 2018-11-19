@@ -9,8 +9,11 @@ public class PlayerScripts : MonoBehaviour {
     public BulletShot projectile;
     public Transform barrel;
 
+    Transform mouseGuide;
 
 	void Start () {
+
+
 
 	}
 	
@@ -40,7 +43,11 @@ public class PlayerScripts : MonoBehaviour {
     void PlayerMovement()
     {
         float horiz = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-        transform.Translate(new Vector2(horiz, 0f));
+        float vert = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+
+        transform.Translate(new Vector2(horiz, vert));
+        transform.Rotate(new Vector2(horiz,0));
+        
     }
 
 
