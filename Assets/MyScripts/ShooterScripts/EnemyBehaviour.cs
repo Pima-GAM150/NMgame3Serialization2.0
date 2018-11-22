@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour {
 
     public Transform target;
-    public Rigidbody2D enemyProjectile;
+    public Rigidbody2D enemyWeapon;
+
     public float moveSpeed;
+    public int pointWorth;
 
 	void Start () {
 		
