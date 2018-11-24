@@ -8,9 +8,9 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
     public Rigidbody2D spawnItem2;
     public float moveSpeed;
 
-    public float howFastThingsGetShotOutAt;
+    public float speedOfTheSpawned;
 
-    public int secondsBtwnSpawns;    
+    public float secondsBtwnSpawns;    
 
     public float spawnTimer;
     float spawnTimer2;
@@ -19,16 +19,14 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
 	void Start () {
         //StartCoroutine(ExistTime(secondsOfExistance));
         //StartCoroutine(SpawnAfterSeconds(secondsBtwnSpawns));
-        TimerReset();
+        Timer2Reset();
+        
     }
     
 
-    void Update () {
-        SpawnStuff();
-	}
-
     public virtual void SpawnStuff()
     {
+
         spawnTimer -= Time.deltaTime;
         spawnTimer2 -= Time.deltaTime;
 
@@ -37,8 +35,8 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
 
             Rigidbody2D item1Clone;
             item1Clone = Instantiate(spawnItem, transform.position, transform.rotation) as Rigidbody2D;
-            item1Clone.velocity = transform.TransformDirection(Vector3.up);
-            TimerReset();
+            item1Clone.velocity = transform.TransformDirection(Vector3.up * speedOfTheSpawned);
+            Timer1Reset();
             
         }
 
@@ -46,18 +44,22 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
         {
             Rigidbody2D item2Clone;
             item2Clone = Instantiate(spawnItem2, transform.position, transform.rotation) as Rigidbody2D;
-            item2Clone.velocity = transform.TransformDirection(Vector3.up);
-            TimerReset();
+            item2Clone.velocity = transform.TransformDirection(Vector3.up * speedOfTheSpawned);
+            Timer2Reset();
         }
 
         
             
     }
 
-    void TimerReset()
+    void Timer2Reset()
+    {
+        spawnTimer2 = secondsBtwnSpawns * Random.Range(2,7);
+    }
+    void Timer1Reset()
     {
         spawnTimer = secondsBtwnSpawns;
-        spawnTimer2 = secondsBtwnSpawns * 2;
+       
     }
 
 

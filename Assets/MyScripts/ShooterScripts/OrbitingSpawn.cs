@@ -14,6 +14,8 @@ public class OrbitingSpawn : SpawnerBehaviour {
 	// Update is called once per frame
 	void Update () {
         //rotate around
+        SpawnStuff();
         transform.RotateAround(centerOfOrbit.position, Vector3.back, moveSpeed * Time.deltaTime);
+        
     }
 }

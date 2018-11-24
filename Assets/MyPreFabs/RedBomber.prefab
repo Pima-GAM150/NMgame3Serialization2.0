@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212551289886215030}
   - component: {fileID: 50831160372423702}
   - component: {fileID: 60600047991376162}
+  - component: {fileID: 114642627446404710}
   m_Layer: 0
   m_Name: RedBomber
   m_TagString: Untagged
@@ -49,7 +50,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730181324646994}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -95,6 +96,24 @@ PolygonCollider2D:
       - {x: 0.14999999, y: -0.099999994}
       - {x: 0.14999999, y: 0.01}
       - {x: 0.02, y: 0.14}
+--- !u!114 &114642627446404710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730181324646994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf75634014181744c9c3c6ff9dd95183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyWeapon: {fileID: 50545827398996992, guid: 4512eac4de593674281d347f3cfc0aff,
+    type: 2}
+  moveSpeed: 1
+  pointWorth: 0
+  distanceToPlayer: 0
+  target: {fileID: 0}
+  enemyState: 0
 --- !u!212 &212551289886215030
 SpriteRenderer:
   m_ObjectHideFlags: 1

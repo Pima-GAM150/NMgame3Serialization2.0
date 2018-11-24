@@ -19,7 +19,7 @@ public class BackgroundSpawner : SpawnerBehaviour
     {
         
         MoveSideToSide();
-        
+        SpawnStuff();
     }
     
     void MoveSideToSide()

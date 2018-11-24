@@ -52,6 +52,17 @@ public class PlayerScripts : MonoBehaviour {
         
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        Debug.Log("I hit" + other.gameObject.name);
+        if (other.gameObject.tag == "Enemy" || other.tag == "Enviornment")
+        {
+            Destroy(gameObject);
+        }
+
+
+    }
 
 
 }
