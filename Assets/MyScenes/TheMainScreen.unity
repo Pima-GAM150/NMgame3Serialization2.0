@@ -3611,53 +3611,53 @@ MonoBehaviour:
   guitarClips:
   - name: Guitar1
     clip: {fileID: 8300000, guid: c50e350d4051a7845ab8c52f47073c41, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     source: {fileID: 0}
   - name: Guitar2
     clip: {fileID: 8300000, guid: af9a61fd30c9a8f4c9a420166194d2ad, type: 3}
-    volume: 0.2
+    volume: 0.25
     pitch: 1
     source: {fileID: 0}
   - name: Guitar3
     clip: {fileID: 8300000, guid: eb65465c6c54b4a4c87cbc5b42461c72, type: 3}
-    volume: 0.1
+    volume: 0.25
     pitch: 1
     source: {fileID: 0}
   - name: Guitar4
     clip: {fileID: 8300000, guid: 77c4a25efa0ebbb45ac598d981cfb43e, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar5
     clip: {fileID: 8300000, guid: 439df44ecfde5c946bdb020dbd9cce98, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar6
     clip: {fileID: 8300000, guid: d6f4c48e18a254b479ae5c46e3969a0b, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar7
     clip: {fileID: 8300000, guid: 00575efce23be82438bcac8eb986bcc0, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar8
     clip: {fileID: 8300000, guid: 9e0460bdee0e4dd4495689402854816d, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar9
     clip: {fileID: 8300000, guid: c114a224a119ed84da09bd187dc8fa74, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
   - name: Guitar10
     clip: {fileID: 8300000, guid: 695fa94a74add7a4abe95814b236b5ae, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.25
+    pitch: 1
     source: {fileID: 0}
 --- !u!4 &726750405
 Transform:
@@ -6068,6 +6068,8 @@ MonoBehaviour:
   mainMenuIndex: 0
   metalScreen: 1
   retroWaveScreen: 2
+  shooterGame: 3
+  trailerScene: 4
   currentScreen: 0
 --- !u!1 &1410357709
 GameObject:
