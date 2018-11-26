@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerScripts : MonoBehaviour {
 
-    
+    public Canvas playScreen;
+    public Canvas endScreen;
+
+    RigidbodyConstraints2D rb;
+
     public float speed;
     public float rotSpeed;
     public BulletShot projectile;
@@ -14,8 +18,9 @@ public class PlayerScripts : MonoBehaviour {
     Transform mouseGuide;
 
 	void Start () {
-
-
+        FindObjectOfType<AudioManager>().PlayExtraSound("Theme1");
+        playScreen.gameObject.SetActive(true);
+        endScreen.gameObject.SetActive(false);
 
 	}
 	
@@ -58,7 +63,12 @@ public class PlayerScripts : MonoBehaviour {
         Debug.Log("I hit" + other.gameObject.name);
         if (other.gameObject.tag == "Enemy" || other.tag == "Enviornment")
         {
-            Destroy(gameObject);
+            rb = RigidbodyConstraints2D.FreezeAll;
+            playScreen.gameObject.SetActive(false);
+            endScreen.gameObject.SetActive(true);
+
+            
+
         }
 
 
