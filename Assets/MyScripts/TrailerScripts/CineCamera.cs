@@ -11,6 +11,9 @@ public class CineCamera : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         myCamera = FindObjectOfType<Camera>();
+        FindObjectOfType<AudioManager>().PlayExtraSound("MainTheme");
+
+        
     
 	}
 	
@@ -18,4 +21,9 @@ public class CineCamera : MonoBehaviour {
 	void Update () {
         myCamera.transform.Translate(0, 0, -speed * Time.deltaTime);
 	}
+
+
+
+
+
 }

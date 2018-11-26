@@ -5,18 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ScreenSelection : MonoBehaviour {
 
+    public Animator animator;
+
+    int levelToLoad;
     public int mainMenuIndex = 0;
     public int metalScreen = 1;
     public int retroWaveScreen = 2;
     public int shooterGame = 3;
     public int trailerScene = 4;
 
-    public int currentScreen;
-
-
-	void Start () {
-		
-	}
+    public int currentScreen;    
 	
 	// Update is called once per frame
 	void Update () {
@@ -38,32 +36,41 @@ public class ScreenSelection : MonoBehaviour {
 
     public void MetalScreenStart()
     {
-        SceneManager.LoadScene(metalScreen);
-        
+        levelToLoad = metalScreen;
+        animator.SetTrigger("FadeOut");
     }
 
 
     public void RetroScreenStart()
     {
-        SceneManager.LoadScene(retroWaveScreen);
+        levelToLoad = retroWaveScreen;
+        animator.SetTrigger("FadeOut");
     }
 
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene(mainMenuIndex);
+        levelToLoad = mainMenuIndex;
+        animator.SetTrigger("FadeOut");
     }
 
     public void ShooterGameStart()
     {
-        SceneManager.LoadScene(shooterGame);
+        levelToLoad = shooterGame;
+        animator.SetTrigger("FadeOut");
     }
 
     public void TrailerStart()
     {
-        SceneManager.LoadScene(trailerScene);
+        levelToLoad = trailerScene;
+        animator.SetTrigger("FadeOut");
+
     }
 
+    public void FadeToLevel(int levelIndex)
+    {
+        SceneManager.LoadScene(levelToLoad);
+    }
 
     public void QuitGame()
     {

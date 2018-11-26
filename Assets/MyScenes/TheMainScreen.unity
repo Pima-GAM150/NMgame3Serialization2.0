@@ -842,7 +842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405074319}
+      - m_Target: {fileID: 420572978}
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -1296,6 +1296,26 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 334187072}
   m_CullTransparentMesh: 0
+--- !u!1001 &420572977
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1405074318}
+    m_Modifications:
+    - target: {fileID: 4362146344727638, guid: cbc6eaf0c6bc30041ace7ea3231d9b29, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbc6eaf0c6bc30041ace7ea3231d9b29, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &420572978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114763434421335712, guid: cbc6eaf0c6bc30041ace7ea3231d9b29,
+    type: 2}
+  m_PrefabInternal: {fileID: 420572977}
+  m_Script: {fileID: 11500000, guid: cf49332389e018c4691d8ff29ef16b12, type: 3}
 --- !u!1 &433959348
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,6 +5258,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!4 &1198722665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4362146344727638, guid: cbc6eaf0c6bc30041ace7ea3231d9b29,
+    type: 2}
+  m_PrefabInternal: {fileID: 420572977}
 --- !u!1 &1242646848
 GameObject:
   m_ObjectHideFlags: 0
@@ -6046,6 +6071,7 @@ RectTransform:
   - {fileID: 879055409}
   - {fileID: 206499762}
   - {fileID: 1171853271}
+  - {fileID: 1198722665}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6065,6 +6091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf49332389e018c4691d8ff29ef16b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   mainMenuIndex: 0
   metalScreen: 1
   retroWaveScreen: 2
