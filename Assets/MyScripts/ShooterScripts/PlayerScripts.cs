@@ -6,8 +6,7 @@ public class PlayerScripts : MonoBehaviour {
 
     public Canvas playScreen;
     public Canvas endScreen;
-
-    RigidbodyConstraints2D rb;
+    
 
     public float speed;
     public float rotSpeed;
@@ -15,23 +14,41 @@ public class PlayerScripts : MonoBehaviour {
     public Transform barrel;
     public float speedOfProjectile;
 
+    enum State { dead = 0, alive = 1 }
+    State playerState;
+
     Transform mouseGuide;
 
 	void Start () {
+
         FindObjectOfType<AudioManager>().PlayExtraSound("Theme1");
         playScreen.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
+
+        playerState = State.alive;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        PlayerMovement();
 
-        PlayerShoot();
+        if (playerState == State.alive)
+        {
+            PlayerMovement();
+            PlayerShoot();
+        }
+        else
+        {
+            PlayerSpriteCantMove();
+        }
+
 	}//end update
 
-   
+   void PlayerSpriteCantMove()
+    {
+        transform.Translate(new Vector2(0, 0));
+        transform.Rotate(new Vector3(0, 0, 0));
+    }
 
 
 
@@ -63,7 +80,8 @@ public class PlayerScripts : MonoBehaviour {
         Debug.Log("I hit" + other.gameObject.name);
         if (other.gameObject.tag == "Enemy" || other.tag == "Enviornment")
         {
-            rb = RigidbodyConstraints2D.FreezeAll;
+
+            playerState = State.dead;
             playScreen.gameObject.SetActive(false);
             endScreen.gameObject.SetActive(true);
 
