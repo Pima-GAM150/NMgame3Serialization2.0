@@ -11,14 +11,13 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
     public float speedOfTheSpawned;
 
     public float secondsBtwnSpawns;    
-
+    [HideInInspector]
     public float spawnTimer;
     float spawnTimer2;
 
 	// Use this for initialization
 	void Start () {
-        //StartCoroutine(ExistTime(secondsOfExistance));
-        //StartCoroutine(SpawnAfterSeconds(secondsBtwnSpawns));
+        Timer1Reset();
         Timer2Reset();
         
     }
@@ -61,29 +60,5 @@ public abstract class SpawnerBehaviour : MonoBehaviour {
         spawnTimer = secondsBtwnSpawns;
        
     }
-
-
-
-
-    //IEnumerator SpawnAfterSeconds(int seconds)
-    //{
-    //    while (true)
-    //    {
-            
-    //        yield return new WaitForSeconds(seconds);
-
-    //        Rigidbody2D clone;
-    //        clone = Instantiate(spawnItem.GetComponent<Rigidbody2D>(), transform.position, transform.rotation) as Rigidbody2D;
-    //        clone.velocity = transform.TransformDirection(Vector3.up * howFastThingsGetShotOutAt);
-            
-            
-    //        break;
-    //    } 
-    //}
-
-    //IEnumerator ExistTime(int seconds)
-    //{
-    //    yield return new WaitForSeconds(seconds);
-    //    Destroy(gameObject);
-    //}
+    
 }

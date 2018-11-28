@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212992400778447448}
   - component: {fileID: 50885498340879726}
   - component: {fileID: 60849629821640374}
+  - component: {fileID: 114097381979168786}
   m_Layer: 0
   m_Name: YellowStrafer
   m_TagString: Untagged
@@ -94,6 +95,25 @@ PolygonCollider2D:
       - {x: 0.16, y: -0.07}
       - {x: 0.11, y: 0.03}
       - {x: 0.02, y: 0.14}
+--- !u!114 &114097381979168786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230585283059914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1037797802f3d340bf767f4fb220c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyWeapon: {fileID: 50213304028756524, guid: 5725da6f960b288419180b71d65affb0,
+    type: 2}
+  moveSpeed: 30
+  pointWorth: 0
+  distanceToPlayer: 0
+  target: {fileID: 0}
+  rateOfFire: 2
+  fireTime: 0
 --- !u!212 &212992400778447448
 SpriteRenderer:
   m_ObjectHideFlags: 1

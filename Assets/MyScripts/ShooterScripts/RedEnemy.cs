@@ -5,23 +5,32 @@ using UnityEngine;
 public class RedEnemy : EnemyBehaviour {
 
 
+    private void Awake()
+    {
+        ResetFireTime();
+    }
 
-	void Awake () {
-        //find player
-        target = GameObject.Find("PlayerTransform").transform;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 
-        //distanceToPlayer = Vector3.Distance(target.transform.position, transform.position);
-        //Vector3 directToPlayer = target.transform.position - transform.position;
-        //directToPlayer.x = 0;
-        
-       
-
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directToPlayer), 0.1f);
-
+        DropBomb();
         Move();
 	}
+
+    void DropBomb()
+    {
+        fireTime -= Time.deltaTime;
+
+        if (fireTime <= 0)
+        {
+            //drop a bomb
+            Instantiate(enemyWeapon, transform.position, transform.rotation);
+            ResetFireTime();
+        }
+    }
+    public void ResetFireTime()
+    {
+        fireTime = rateOfFire;
+    }
+
 }

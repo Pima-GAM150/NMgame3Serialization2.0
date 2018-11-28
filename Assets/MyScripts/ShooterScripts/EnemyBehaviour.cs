@@ -12,17 +12,36 @@ public class EnemyBehaviour : MonoBehaviour {
     [HideInInspector]
     public float distanceToPlayer;
     public Transform target;
+    
 
-
-    public enum State { isFlee = 0, isAttack= 1}
-    public State enemyState;
-
+    public float rateOfFire;
+    [HideInInspector]
+    public float fireTime;
 
     public virtual void Move()
     {
-        Vector2 directToPlayer = target.transform.position - transform.position;
-        //transform.rotation = Quaternion.Slerp(transform.rotation, , 0.1f);
+        //rateOfFire -= Time.deltaTime;
+        //Vector3 directToPlayer = target.position - transform.position;
+        //directToPlayer.y = 0;
+        //directToPlayer.x = 0;
+        transform.rotation = new Quaternion(0,0,-90f,0);
 
         transform.Translate(0, moveSpeed * Time.deltaTime, 0);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void StrafeMove()
+    {
+        transform.rotation = new Quaternion(0, 0, target.transform.position.z, 0);
+
+        transform.Translate(moveSpeed * Time.deltaTime,0, 0);
+    }
+
 }

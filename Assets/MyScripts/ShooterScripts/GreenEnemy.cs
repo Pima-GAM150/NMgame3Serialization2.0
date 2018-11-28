@@ -11,11 +11,8 @@ public class GreenEnemy : EnemyBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        FindPlayer();
-
-        if (enemyState == State.isAttack)
-            FindPlayer();
-        else RunAway();
+        Move();
+        ShootLazer();
        
 
         
@@ -23,32 +20,21 @@ public class GreenEnemy : EnemyBehaviour {
 
 	}
 
-    void RunAway()
+    void ShootLazer()
     {
-        target = GameObject.FindObjectOfType<BackgroundSpawner>().gameObject.transform;
-        Move();
-    }
+        fireTime -= Time.deltaTime;
 
-
-    void FindPlayer()
-    {
-        target = GameObject.Find("Player1").transform;
-        distanceToPlayer = Vector3.Distance(target.transform.position, gameObject.transform.position);
-        if (distanceToPlayer > 10)
+        if (fireTime <= 0)
         {
-            //Vector2 directToPlayer = target.transform.position - transform.position;
-            //transform.rotation = Quaternion.Slerp(transform.rotation, transform.rotation, 0.1f);
-
-            Move();
-            
-
-            //if (directToPlayer.magnitude < 3)
-            //{
-            //    enemyState = State.isFlee;
-            //}
-            //else enemyState = State.isAttack;
-
+            Instantiate(enemyWeapon, transform.position, transform.rotation);
+            ResetFireTime();
         }
-
     }
+    
+
+    public void ResetFireTime()
+    {
+        fireTime = rateOfFire;
+    }
+
 }

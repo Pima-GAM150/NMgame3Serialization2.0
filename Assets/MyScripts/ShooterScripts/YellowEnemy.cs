@@ -16,11 +16,27 @@ public class YellowEnemy : EnemyBehaviour {
         if (target == null)
         {
             target = GameObject.FindObjectOfType<PlayerScripts>().gameObject.transform;
+            StrafeMove();
+            ShootLazer();
 
-            Vector3 directToPlayer = target.position - transform.position;
-            directToPlayer.z = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directToPlayer), 0.1f);
         }
+    }
+
+
+    void ShootLazer()
+    {
+        fireTime -= Time.deltaTime;
+
+        if (fireTime <= 0)
+        {
+            Instantiate(enemyWeapon, transform.position, transform.rotation);
+            ResetFireTime();
+        }
+    }
+
+    public void ResetFireTime()
+    {
+        fireTime = rateOfFire;
     }
 
 }

@@ -195,17 +195,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 31672468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed7e753602b8bc4bbd369edf79f0f14, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c9871e6aefbbdd48823dc4beb15385b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnItem: {fileID: 50831160372423702, guid: a1c295becc0f7b4419aa3cc54321d767, type: 2}
-  spawnItem2: {fileID: 50744191509305574, guid: 39340e9b378beaa41934bcbf93daafc9,
+  spawnItem: {fileID: 50320493818623768, guid: 73bb16a65cfc2c646836aa4daf9c2089, type: 2}
+  spawnItem2: {fileID: 50831160372423702, guid: a1c295becc0f7b4419aa3cc54321d767,
     type: 2}
-  moveSpeed: 60
+  moveSpeed: 50
   speedOfTheSpawned: 0
-  secondsBtwnSpawns: 4
+  secondsBtwnSpawns: 3
   spawnTimer: 0
-  centerOfOrbit: {fileID: 157250978}
+  maxMoveTime: 2
 --- !u!65 &31672471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -791,9 +791,9 @@ MonoBehaviour:
   spawnItem: {fileID: 50901600951354336, guid: 90c600d9e8db9e64c91ebca6f3c6e03c, type: 2}
   spawnItem2: {fileID: 50901600951354336, guid: 90c600d9e8db9e64c91ebca6f3c6e03c,
     type: 2}
-  moveSpeed: 60
+  moveSpeed: 90
   speedOfTheSpawned: 0
-  secondsBtwnSpawns: 1.5
+  secondsBtwnSpawns: 2
   spawnTimer: 0
   maxMoveTime: 3
 --- !u!65 &349788355
@@ -1909,7 +1909,7 @@ GameObject:
   - component: {fileID: 1388285729}
   - component: {fileID: 1388285728}
   - component: {fileID: 1388285727}
-  - component: {fileID: 1388285730}
+  - component: {fileID: 1388285726}
   m_Layer: 0
   m_Name: EnemySpawer1
   m_TagString: Untagged
@@ -1930,6 +1930,25 @@ Transform:
   m_Father: {fileID: 157250978}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388285726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388285724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9871e6aefbbdd48823dc4beb15385b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnItem: {fileID: 50885498340879726, guid: 46f07e4a787a1584ab34d8b1e72298bd, type: 2}
+  spawnItem2: {fileID: 50744191509305574, guid: 39340e9b378beaa41934bcbf93daafc9,
+    type: 2}
+  moveSpeed: 30
+  speedOfTheSpawned: 0
+  secondsBtwnSpawns: 2
+  spawnTimer: 0
+  maxMoveTime: 3
 --- !u!65 &1388285727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1984,25 +2003,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1388285724}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1388285730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1388285724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed7e753602b8bc4bbd369edf79f0f14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnItem: {fileID: 50320493818623768, guid: 73bb16a65cfc2c646836aa4daf9c2089, type: 2}
-  spawnItem2: {fileID: 50885498340879726, guid: 46f07e4a787a1584ab34d8b1e72298bd,
-    type: 2}
-  moveSpeed: 50
-  speedOfTheSpawned: 0
-  secondsBtwnSpawns: 5
-  spawnTimer: 0
-  centerOfOrbit: {fileID: 157250978}
 --- !u!1 &1503900312
 GameObject:
   m_ObjectHideFlags: 0

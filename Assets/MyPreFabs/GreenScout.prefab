@@ -106,12 +106,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6ed18577b094041a48d46e31bc8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyWeapon: {fileID: 0}
-  moveSpeed: 5
+  enemyWeapon: {fileID: 50177738393134080, guid: 968cdb4fdf225474ba553eff60e8e313,
+    type: 2}
+  moveSpeed: 15
   pointWorth: 0
   distanceToPlayer: 0
   target: {fileID: 0}
-  enemyState: 0
+  rateOfFire: 1
+  fireTime: 0
 --- !u!212 &212018278254382038
 SpriteRenderer:
   m_ObjectHideFlags: 1
