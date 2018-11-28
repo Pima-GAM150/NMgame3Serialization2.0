@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GreenEnemy : EnemyBehaviour {
-    
 
 
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        target = FindObjectOfType<PlayerScripts>().gameObject.transform;
+    }
+
+    // Update is called once per frame
+    void Update () {
         Move();
         ShootLazer();
        

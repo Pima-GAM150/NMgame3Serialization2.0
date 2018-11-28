@@ -18,14 +18,10 @@ public class EnemyBehaviour : MonoBehaviour {
     [HideInInspector]
     public float fireTime;
 
-    public virtual void Move()
-    {
-        //rateOfFire -= Time.deltaTime;
-        //Vector3 directToPlayer = target.position - transform.position;
-        //directToPlayer.y = 0;
-        //directToPlayer.x = 0;
-        transform.rotation = new Quaternion(0,0,-90f,0);
+ 
 
+    public virtual void Move()
+    {       
         transform.Translate(0, moveSpeed * Time.deltaTime, 0);
     }
 

@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWeapon: {fileID: 50177738393134080, guid: 968cdb4fdf225474ba553eff60e8e313,
     type: 2}
-  moveSpeed: 15
+  moveSpeed: 10
   pointWorth: 0
   distanceToPlayer: 0
   target: {fileID: 0}
