@@ -6,7 +6,8 @@ public class PlayerScripts : MonoBehaviour {
 
     public Canvas playScreen;
     public Canvas endScreen;
-    
+
+    public int playerScore;
 
     public float speed;
     public float rotSpeed;
@@ -20,6 +21,8 @@ public class PlayerScripts : MonoBehaviour {
     Transform mouseGuide;
 
 	void Start () {
+
+        playerScore = 0;
 
         FindObjectOfType<AudioManager>().PlayExtraSound("Theme1");
         playScreen.gameObject.SetActive(true);
