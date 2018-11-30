@@ -11,9 +11,9 @@ public class EnemyBehaviour : MonoBehaviour {
     public int pointWorth;
     [HideInInspector]
     public float distanceToPlayer;
-    public Transform target;
-    
 
+    public float enemyProjectileSpeed;
+    //used for time
     public float rateOfFire;
     [HideInInspector]
     public float fireTime;
@@ -29,13 +29,15 @@ public class EnemyBehaviour : MonoBehaviour {
     {
         if (collision.tag == "Bullet")
         {
+
+            
             Destroy(gameObject);
         }
     }
 
     public void StrafeMove()
     {
-        transform.rotation = new Quaternion(0, 0, target.transform.position.z, 0);
+        
 
         transform.Translate(moveSpeed * Time.deltaTime,0, 0);
     }

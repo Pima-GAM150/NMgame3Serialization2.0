@@ -13,14 +13,10 @@ public class YellowEnemy : EnemyBehaviour {
     // Update is called once per frame
     void Update()
     {
+        StrafeMove();
+        ShootLazer();
 
-        if (target == null)
-        {
-            target = GameObject.FindObjectOfType<PlayerScripts>().gameObject.transform;
-            StrafeMove();
-            ShootLazer();
-
-        }
+       
     }
 
 

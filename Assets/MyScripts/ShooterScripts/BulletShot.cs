@@ -34,15 +34,6 @@ public class BulletShot : MonoBehaviour {
         {//if if hits anything it destroys itself;
             Destroy(gameObject);
         }
-        if (trigger.tag == "Enemy")
-        {// if the target is an enemy it will take the the trigger and get the enemy script and take the point worth and find the player and add the points to its splayerscore
-            FindObjectOfType<PlayerScripts>().playerScore =+ trigger.GetComponent<EnemyBehaviour>().pointWorth;
-        }
-
-        if (trigger.tag == "Enviornment")
-        {//add a small amount 
-            FindObjectOfType<PlayerScripts>().playerScore = + 50;
-        }
 
     }
 

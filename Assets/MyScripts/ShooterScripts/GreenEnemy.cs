@@ -8,7 +8,7 @@ public class GreenEnemy : EnemyBehaviour {
 
     private void Awake()
     {
-        target = FindObjectOfType<PlayerScripts>().gameObject.transform;
+        
     }
 
     // Update is called once per frame
@@ -28,7 +28,10 @@ public class GreenEnemy : EnemyBehaviour {
 
         if (fireTime <= 0)
         {
-            Instantiate(enemyWeapon, transform.position, transform.rotation);
+            Rigidbody2D clone;
+            clone = Instantiate(enemyWeapon, transform.position, transform.rotation);
+            clone.velocity = transform.TransformDirection(Vector3.up * enemyProjectileSpeed);
+
             ResetFireTime();
         }
     }

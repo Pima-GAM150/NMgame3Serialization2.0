@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31672468}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.7, y: 10.59, z: 0}
+  m_LocalPosition: {x: -0.82, y: 10.59, z: 0}
   m_LocalScale: {x: 0.262, y: 0.29700002, z: 1}
   m_Children: []
   m_Father: {fileID: 157250978}
@@ -503,7 +503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 236095192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.74, y: 5.5011, z: 0}
+  m_LocalPosition: {x: 0.74, y: 6.14, z: 0}
   m_LocalScale: {x: 0.1586, y: 0.1422, z: 1}
   m_Children: []
   m_Father: {fileID: 157250978}
@@ -1873,13 +1873,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1367864789}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 8.6, y: -1.7700001, z: 0}
   m_LocalScale: {x: 0.262, y: 0.297, z: 1}
   m_Children: []
   m_Father: {fileID: 157250978}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!114 &1367864794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1895,8 +1895,8 @@ MonoBehaviour:
   spawnItem2: {fileID: 50001339061955284, guid: e9f99255ae0b508489acd32f99186db7,
     type: 2}
   moveSpeed: 30
-  speedOfTheSpawned: 10
-  secondsBtwnSpawns: 3
+  speedOfTheSpawned: 0
+  secondsBtwnSpawns: 2
   spawnTimer: 0
   centerOfOrbit: {fileID: 157250978}
 --- !u!1 &1388285724
@@ -1925,7 +1925,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1388285724}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.48, y: 4.69, z: 0}
+  m_LocalPosition: {x: -1.32, y: 4.69, z: 0}
   m_LocalScale: {x: 0.262, y: 0.29700002, z: 1}
   m_Children: []
   m_Father: {fileID: 157250978}
@@ -2336,6 +2336,11 @@ Prefab:
       propertyPath: m_Mass
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114681033559544374, guid: 8f8dab60da6f708488bcc55f5d718ad2,
+        type: 2}
+      propertyPath: uiScoreDisplay
+      value: 
+      objectReference: {fileID: 2035048923}
     m_RemovedComponents:
     - {fileID: 60010383149400534, guid: 8f8dab60da6f708488bcc55f5d718ad2, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8f8dab60da6f708488bcc55f5d718ad2, type: 2}

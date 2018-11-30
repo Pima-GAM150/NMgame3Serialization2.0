@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScripts : MonoBehaviour {
 
     public Canvas playScreen;
     public Canvas endScreen;
+    public Text uiScoreDisplay;
 
     public int playerScore;
 
@@ -34,9 +36,10 @@ public class PlayerScripts : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        
         if (playerState == State.alive)
         {
+            uiScoreDisplay.text = playerScore.ToString();
             PlayerMovement();
             PlayerShoot();
         }
@@ -71,8 +74,10 @@ public class PlayerScripts : MonoBehaviour {
     {
         float horiz = Input.GetAxis("Horizontal") * Time.deltaTime * rotSpeed;
         float vert = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+        float horzStrafe = Input.GetAxis("HorizStrafe") * Time.deltaTime * speed;
 
-        transform.Translate(new Vector2(0, vert));
+        
+        transform.Translate(new Vector2(horzStrafe, vert));
         transform.Rotate(new Vector3(0,0, -horiz));
         
     }

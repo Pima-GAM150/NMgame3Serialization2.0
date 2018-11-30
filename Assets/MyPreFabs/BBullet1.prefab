@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 114052459225924410}
   - component: {fileID: 50177738393134080}
   - component: {fileID: 95818617428783114}
+  - component: {fileID: 114785451900920098}
   m_Layer: 0
   m_Name: BBullet1
   m_TagString: Enemy
@@ -122,6 +123,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsTilDeath: 15
+--- !u!114 &114785451900920098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1427196595905400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d08a0c76b70c9f47add2331fb51030a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsTilDeath: 2
 --- !u!212 &212054339757907922
 SpriteRenderer:
   m_ObjectHideFlags: 1
