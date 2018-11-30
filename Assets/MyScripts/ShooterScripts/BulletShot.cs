@@ -30,9 +30,16 @@ public class BulletShot : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D trigger)
     {// what happens when this bullet hits something with a trigger
 
-        if (trigger.tag != "PlayerSprite")
-        {//if if hits anything it destroys itself;
-            Destroy(gameObject);
+        if (gameObject.tag != "GreenBullet")
+        {
+           
+        }
+        else
+        {
+            if (trigger.tag != "PlayerSprite")
+            {
+                Destroy(gameObject);
+            }
         }
 
     }

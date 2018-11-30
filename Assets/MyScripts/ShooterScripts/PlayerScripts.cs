@@ -25,6 +25,7 @@ public class PlayerScripts : MonoBehaviour {
 	void Start () {
 
         playerScore = 0;
+        EnemyBehaviour.enemyDiedEvent += OnEnemyDied;
 
         FindObjectOfType<AudioManager>().PlayExtraSound("Theme1");
         playScreen.gameObject.SetActive(true);
@@ -33,6 +34,11 @@ public class PlayerScripts : MonoBehaviour {
         playerState = State.alive;
 
 	}
+
+    void OnEnemyDied( EnemyBehaviour enemyThatDied )
+    {
+        playerScore += enemyThatDied.pointWorth;
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Bullet
   - Bomber
+  - GreenBullet
   layers:
   - Default
   - TransparentFX

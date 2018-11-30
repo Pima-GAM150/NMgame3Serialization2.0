@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehaviour : MonoBehaviour {
+public abstract class EnemyBehaviour : MonoBehaviour {
 
     
     public Rigidbody2D enemyWeapon;
 
     public float moveSpeed;
     public int pointWorth;
+    public int secondsOfLife;
+
+
     [HideInInspector]
     public float distanceToPlayer;
 
@@ -18,7 +21,13 @@ public class EnemyBehaviour : MonoBehaviour {
     [HideInInspector]
     public float fireTime;
 
- 
+    public delegate void EnemyDied(EnemyBehaviour enemy);
+    public static event EnemyDied enemyDiedEvent;
+
+    public virtual void Start()
+    {
+        StartCoroutine(DestroySelfAfter(secondsOfLife));
+    }
 
     public virtual void Move()
     {       
@@ -27,10 +36,11 @@ public class EnemyBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        print("Enemy being hit by " + collision.name);
+        if (collision.tag == "GreenBullet")
         {
 
-            
+            enemyDiedEvent(this);
             Destroy(gameObject);
         }
     }
@@ -40,6 +50,15 @@ public class EnemyBehaviour : MonoBehaviour {
         
 
         transform.Translate(moveSpeed * Time.deltaTime,0, 0);
+    }
+
+    IEnumerator DestroySelfAfter(int seconds)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(seconds);
+            Destroy(gameObject);
+        }
     }
 
 }

@@ -7,7 +7,6 @@ public class YellowEnemy : EnemyBehaviour {
     // Use this for initialization
     private void Awake()
     {
-       
     }
 
     // Update is called once per frame

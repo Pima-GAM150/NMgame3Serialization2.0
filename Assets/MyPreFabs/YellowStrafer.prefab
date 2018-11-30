@@ -109,9 +109,10 @@ MonoBehaviour:
   enemyWeapon: {fileID: 50213304028756524, guid: 5725da6f960b288419180b71d65affb0,
     type: 2}
   moveSpeed: 30
-  pointWorth: 0
+  pointWorth: 150
+  secondsOfLife: 15
   distanceToPlayer: 0
-  target: {fileID: 0}
+  enemyProjectileSpeed: 0
   rateOfFire: 2
   fireTime: 0
 --- !u!212 &212992400778447448

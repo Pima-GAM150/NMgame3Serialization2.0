@@ -43,7 +43,7 @@ public class AstroidandStar : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        if (collision.tag == "GreenBullet")
         {
             size -= 1;
         }

@@ -110,6 +110,7 @@ MonoBehaviour:
     type: 2}
   moveSpeed: 25
   pointWorth: 200
+  secondsOfLife: 10
   distanceToPlayer: 0
   enemyProjectileSpeed: 75
   rateOfFire: 1

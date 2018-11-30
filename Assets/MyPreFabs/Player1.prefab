@@ -136,6 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d320be86e8f85244f9affdfc1120245d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playScreen: {fileID: 0}
+  endScreen: {fileID: 0}
+  uiScoreDisplay: {fileID: 0}
+  playerScore: 0
   speed: 5
   rotSpeed: 2
   projectile: {fileID: 114012350320361966, guid: 5725da6f960b288419180b71d65affb0,
