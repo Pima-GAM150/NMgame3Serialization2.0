@@ -13,6 +13,11 @@ public class HighScoreList : MonoBehaviour {
 
     SerializableScores scores = new SerializableScores {};
 
+    void Start() {
+    	Load();
+    	Regenerate();
+    }
+
     public void SaveScoreToList()
     {
         if (string.IsNullOrEmpty(playerNameInput.text)) return;
@@ -37,7 +42,7 @@ public class HighScoreList : MonoBehaviour {
 
         for (int i = 0; i < scores.entries.Count; i++)
         {
-            listOfScores += "Player: " + scores.entries[i].playerName + " : " + scores.entries[i].playerScore;
+            listOfScores += "Player: " + scores.entries[i].playerName + " : " + scores.entries[i].playerScore + "\n";
         }
 
         highScoreLabel.text = listOfScores;
