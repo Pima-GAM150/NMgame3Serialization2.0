@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour {
 
 
     public AudioMixer audioMix;
+    public AudioMixerGroup mainMixerOutput;
 
     public Sounds[] extraSoundClips;
 
@@ -22,6 +23,7 @@ public class AudioManager : MonoBehaviour {
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = mainMixerOutput;
         }
 
         foreach (Sounds s in bassClips)
@@ -30,6 +32,7 @@ public class AudioManager : MonoBehaviour {
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = mainMixerOutput;
         }
 
         foreach (Sounds s in guitarClips)
@@ -38,6 +41,7 @@ public class AudioManager : MonoBehaviour {
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = mainMixerOutput;
         }
 
         foreach (Sounds s in extraSoundClips)
@@ -46,6 +50,7 @@ public class AudioManager : MonoBehaviour {
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = mainMixerOutput;
         }
 
 
